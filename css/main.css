@@ -1,0 +1,255 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+html, body, div, span, p, a, del, em, img, ol, ul, li, fieldset, form, label {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html, body {
+	line-height: 1;
+	min-height:100%;
+	font-family: 'Open sans', Calibri, Arial, sans-serif;
+}
+
+body {
+	background: #eeeeee;
+	background: -webkit-linear-gradient(top, #eeeeee, #bbb 100%);
+	background: -moz-linear-gradient(top, #eeeeee, #bbb 100%);
+	background: -o-linear-gradient(top, #eeeeee, #bbb 100%);
+	background: -ms-linear-gradient(top, #eeeeee, #bbb 100%);
+	background: linear-gradient(top, #eeeeee, #bbb 100%);
+	background-attachment:fixed;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+p {
+	margin:1em 0;
+	line-height:1.1em;
+}
+
+q {
+	font-style:italic;
+	color:#333;
+}
+
+h1 {
+	font-size:2.91em;
+	margin:0;
+}
+
+h1 > small {
+	text-align:right;
+	display:inline-block;
+	font-size:.71em;
+	text-indent:15em;
+	color:#444;
+}
+
+h2 {
+	color:inherit;
+	font-size:1.91em;
+	margin:2em 0 1em 0;
+}
+
+h2:first-child {margin-top:0;}
+
+h3 {
+	color:#333;
+	font-size:1.41em;
+	margin:1em 0;
+}
+
+h4 {
+	color:#444;
+	font-size:1.11em;
+	margin:1em 0;
+}
+
+#progress {
+	height:3px;
+	background: red;
+	bottom:0;
+	z-index:200;
+}
+
+#scrollbar {
+	position:fixed;
+	right:2px;
+	height:50px;
+	width:6px;
+	background:#444;
+	background:rgba(0,0,0,0.6);
+	border:1px solid rgba(255,255,255,0.6);
+	z-index:300;
+	border-radius:3px;
+}
+
+.skrollr-desktop #scrollbar {display:none;}
+
+#bg1, #bg2, #bg3 {
+	z-index:50;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background: url(../images/snowflake1.png) repeat 0 0;
+	opacity: 0.2;
+}
+
+#bg2 {
+	z-index:49;
+	background-image: url(../images/snowflake2.png);
+	opacity: 0.4;
+}
+
+#bg3 {
+	z-index:48;
+	background-image: url(../images/snowflake3.png);
+	opacity: 0.3;
+}
+
+#intro {
+	height: 90%;
+	width:80%;
+	left:50%;
+	top:1em;
+	margin-left:-40%;
+	padding: 10em;
+	background: transparent;
+	text-align:center;
+	border-radius:1em;
+
+	-webkit-transform-origin:0 0;
+	-moz-transform-origin:0 0;
+	-ms-transform-origin:0 0;
+	-o-transform-origin:0 0;
+	transform-origin:0 0;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#intro .arrows {
+	font-size:2em;
+	color:#09f;
+}
+
+#transform {
+	width:70%;
+	left:50%;
+	top:20%;
+	margin-left:-35%;
+	text-align:center;
+	font-size:150%;
+	.transform-origin(50%, 50%);
+}
+
+.section {
+	/*background: #fdd;*/
+	width:100%;
+	height:100%;
+	padding-top:15%;
+	text-align:center;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#section2 {
+	width:100%;
+	height:100%;
+}
+
+#section2 #easing {
+	top:10%;
+	width:50%;
+	z-index:101;
+	text-align: center;
+}
+
+.drop {
+	background: #fff;
+	padding:3px;
+	border-radius: 60px;
+	z-index: 999;
+}
+
+#ending {
+	width:80%;
+	left:10%;
+	bottom: 0;
+	height:10%;
+	padding: 0;
+	text-align: center;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.twitter-share-button, .twitter-follow-button {
+	vertical-align:middle;
+}
+
+#easing_wrapper{
+	width:100%;
+	height:100%;
+}
+
+#easing_wrapper #easing_wrapper_easing {
+	height: 100%;
+	top:10%;
+	width:100%;
+	z-index:101;
+	text-align: center;
+}
+
+/* custom */
+#trees {
+  width: 300px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#tree1,
+#tree2,
+#tree3,
+#tree4,
+#tree5,
+#tree6 {
+  margin: 0 auto;
+	width: 300px;
+}
+#footer {
+	width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+}
+
+#footer img {
+  display: inline;
+  bottom: 0;
+}
+
+#section1,
+#section3 {
+	background: #fff;
+}
+
+#brick {
+	margin: 0 auto;
+}

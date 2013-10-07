@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+	<title>Christmas | 2</title>
+  <!-- https://github.com/Prinzhorn/skrollr -->
+  <!-- stylesheet -->
+	<link href='./css/fixed-positioning.css' rel='stylesheet' type='text/css' />
+	<link href='./css/main.css' rel='stylesheet' type='text/css' />
+</head>
+<body>
+	<div id='bg1' data-0='background-position:0px 0px;' data-end='background-position:-500px -10000px;'></div>
+	<div id='bg2' data-0='background-position:0px 0px;' data-end='background-position:-500px -8000px;'></div>
+	<div id='bg3' data-0='background-position:0px 0px;' data-end='background-position:-500px -6000px;'></div>
+	<div id='progress' data-0='width:0%;' data-end='width:100%;'></div>
+	<!-- Greeting -->
+	<div id='intro' data-0='opacity:1;top:20%;transform:rotate(0deg);transform-origin:0 0;' data-500='opacity:0;top:-10%;transform:rotate(-90deg);'>
+		<h1>Greetings !</h1>
+		<p>Quaeque docendi maiestatis mei ex, veri vituperata philosophia quo no. At his justo probatus tacimates, ea ius alii probatus maluisset, vel cu veniam corpora accumsan.</p>
+	</div>
+  <!-- section1 -->
+	<div id='section1' class='section' data-500='top:100%;' data-1000='top:0%;' data-1800='display:block;' data-2500='top:-100%;display:none;'>
+		<h2>Wish</h2>
+		<img src='./images/ornm1.png'/>
+	</div>
+  <!-- section2 -->
+	<div id='section2' class='section' data-0='display:none;' data-3000='display:block;' data-3500='background:rgba(0, 0, 0, 0);color[swing]:rgb(0,0,0);' data-4000='top:20%;' data-4500='top:-100%;'>
+		<div id='easing' data-3200='left:100%' data-3800='left:25%;'>
+		  <h2>Our work</h2>
+		  <img src='./images/ornm3.png'/>
+		</div>
+	</div>
+  <!-- section3 -->
+	<div id='section3' class='section' data-4500='top:100%;' data-5000='top:0%;' data-5800='display:block;' data-6500='top:-100%;display:none;'>
+		<h2>Partnership</h2>
+		<img src='./images/ornm2.png'/>
+	</div>
+  <!-- Ending -->
+	<div id='easing_wrapper' data-0='display:none;' data-6500='display:block;' data-7500='background:rgba(0, 0, 0, 1);color[swing]:rgb(0,0,0);' data-8300='color:rgb(255,255,255);' data-8600='top:0%;'>
+		<div id='easing_wrapper_easing' >
+			<h2>Merry christmas</h2>
+			<section id='trees'>
+			  <img id='tree1' data-7500='display:none;' data-7550='display:block;' src='./images/christmas_tree2.png'/>
+			  <img id='tree2' data-7550='display:none;' data-7600='display:block;' src='./images/christmas_tree2-high-contra.png'/>
+			  <img id='tree3' data-7600='display:none;' data-7650='display:block;' src='./images/christmas_tree2.png'/>
+        <img id='tree4' data-7650='display:none;' data-7700='display:block;' src='./images/christmas_tree2-low-contra.png'/>
+        <img id='tree5' data-7700='display:none;' data-7750='display:block;' src='./images/christmas_tree2.png'/>
+        <img id='tree6' data-7750='display:none;' data-7800='display:block;' src='./images/christmas_tree2-high-contra.png'/>
+        <img id='tree1' data-7800='display:none;' data-7850='display:block;' src='./images/christmas_tree2.png'/>
+			  <img id='tree2' data-7850='display:none;' data-7900='display:block;' src='./images/christmas_tree2-high-contra.png'/>
+			  <img id='tree3' data-7900='display:none;' data-7950='display:block;' src='./images/christmas_tree2.png'/>
+        <img id='tree4' data-7950='display:none;' data-8000='display:block;' src='./images/christmas_tree2-low-contra.png'/>
+        <img id='tree5' data-8000='display:none;' data-8050='display:block;' src='./images/christmas_tree2.png'/>
+        <img id='tree6' data-8050='display:none;' data-8100='display:block;' src='./images/christmas_tree2-high-contra.png'/>
+        <img id='tree4' data-8100='display:none;' data-8150='display:block;' src='./images/christmas_tree2-low-contra.png'/>
+        <img id='tree5' data-8150='display:none;' data-8200='display:block;' src='./images/christmas_tree2.png'/>
+        <img id='tree6' data-8200='display:none;' data-8250='display:block;' src='./images/christmas_tree2-high-contra.png'/>
+      </section>
+		</div>
+	</div>
+	<footer id='footer' data-7650='opacity:0;font-size:120%;' data-7800='opacity:1;font-size:150%;'>
+	  <img src='./images/footer_exxon.png'/>
+	  <img src='./images/footer_esso.png'/>
+	  <img src='./images/footer_mobil.png'/>
+	</footer>
+	<div id='scrollbar' data-0='top:0%;margin-top:2px;' data-end='top:100%;margin-top:-52px;'></div>
+	<script type='text/javascript' src='dist/skrollr.min.js'></script>
+	<script type='text/javascript'>
+	var s = skrollr.init({
+		edgeStrategy: 'set',
+		easing: {
+			WTF: Math.random,
+			inverted: function(p) {
+				return 1-p;
+			}
+		}
+	});
+	</script>
+</body>
+</html>
